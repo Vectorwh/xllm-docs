@@ -59,8 +59,9 @@ docker run -it -d \
 ```bash
 git clone https://github.com/jd-opensource/xllm
 cd xllm
-git submodule init
-git submodule update
+pip install pre-commit
+pre-commit install
+git submodule update --init --recursive
 ```
 
 执行编译，在`build/`下生成可执行文件：
